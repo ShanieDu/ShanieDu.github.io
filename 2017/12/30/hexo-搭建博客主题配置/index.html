@@ -28,7 +28,7 @@
 <meta property="og:site_name" content="流水嘀咚的博客">
 <meta property="og:description" content="#主题配置 Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。以我现在使用的indigo主题为例。首先将主题库clone到MyBlog目录下的themes目录：  git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo  安装less，主题使用less作为css预处理工具：  n">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-30T07:05:40.000Z">
+<meta property="og:updated_time" content="2017-12-30T07:09:45.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo 搭建博客主题配置">
 <meta name="twitter:description" content="#主题配置 Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。以我现在使用的indigo主题为例。首先将主题库clone到MyBlog目录下的themes目录：  git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo  安装less，主题使用less作为css预处理工具：  n">
@@ -168,13 +168,6 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#menu"><span class="post-toc-number">1.</span> <span class="post-toc-text">menu:</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#link-fontawesome图标，省略前缀，本主题前缀为-icon-，必须"><span class="post-toc-number">2.</span> <span class="post-toc-text">link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#text-About-菜单显示的文字，如果省略即默认与图标一致，首字母会转大写"><span class="post-toc-number">3.</span> <span class="post-toc-text">text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#url-about-链接，绝对或相对路径，必须。"><span class="post-toc-number">4.</span> <span class="post-toc-text">url: /about 链接，绝对或相对路径，必须。</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#target-blank-是否跳出，省略则在当前页面打开"><span class="post-toc-number">5.</span> <span class="post-toc-text">target: _blank 是否跳出，省略则在当前页面打开</span></a></li></ol>
-        </nav>
-    </aside>
-    
 <article id="post-hexo-搭建博客主题配置"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -225,8 +218,7 @@
 </blockquote>
 <p>最后修改主题配置文件MyBlog/themes/indigo/_config.yml：</p>
 <blockquote>
-<p>#<strong>添加新菜单项遵循以下规则</strong></p>
-<h1 id="menu"><a href="#menu" class="headerlink" title="menu:"></a>menu:</h1><h1 id="link-fontawesome图标，省略前缀，本主题前缀为-icon-，必须"><a href="#link-fontawesome图标，省略前缀，本主题前缀为-icon-，必须" class="headerlink" title="link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须"></a>link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须</h1><h1 id="text-About-菜单显示的文字，如果省略即默认与图标一致，首字母会转大写"><a href="#text-About-菜单显示的文字，如果省略即默认与图标一致，首字母会转大写" class="headerlink" title="text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写"></a>text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写</h1><h1 id="url-about-链接，绝对或相对路径，必须。"><a href="#url-about-链接，绝对或相对路径，必须。" class="headerlink" title="url: /about 链接，绝对或相对路径，必须。"></a>url: /about 链接，绝对或相对路径，必须。</h1><h1 id="target-blank-是否跳出，省略则在当前页面打开"><a href="#target-blank-是否跳出，省略则在当前页面打开" class="headerlink" title="target: _blank 是否跳出，省略则在当前页面打开"></a>target: _blank 是否跳出，省略则在当前页面打开</h1><p>menu:<br>  home:<br>  text: 主页<br>  url: /<br>  archives:<br>  url: /archives<br>  tags:<br>  url: /tags<br>  github:<br>  url: <a href="https://github.com/glassweichao" target="_blank" rel="noopener">https://github.com/glassweichao</a><br>  target: _blank<br>  link:<br>  text: 测试<br>  url: /404<br>  rss: /atom.xml<br>  你的头像,替换掉 indigo/source/img/logo.jpg 即可<br>  urlavatar: /img/logo.jpg<br>  Content<br>  tags:<br>  title: 标签<br>  是否开启分享<br>  share: true<br>  是否开启搜索<br>  search: true<br>  是否大屏幕下文章页隐藏导航<br>  hideMenu: true<br>  是否开启toc<br>  toc: false  关闭toc<br>  toc:<br>  list_number: true # 是否显示数字排序<br>  浏览器标签栏小图标<br>  favicon: /favicon.ico</p>
+<p>//<strong>添加新菜单项遵循以下规则</strong><br>// menu:<br>//   link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须<br>//   text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写<br>//   url: /about 链接，绝对或相对路径，必须。<br>//   target: _blank 是否跳出，省略则在当前页面打开<br>menu:<br>  home:<br>  text: 主页<br>  url: /<br>  archives:<br>  url: /archives<br>  tags:<br>  url: /tags<br>  github:<br>  url: <a href="https://github.com/glassweichao" target="_blank" rel="noopener">https://github.com/glassweichao</a><br>  target: _blank<br>  link:<br>  text: 测试<br>  url: /404<br>  rss: /atom.xml<br>  你的头像,替换掉 indigo/source/img/logo.jpg 即可<br>  urlavatar: /img/logo.jpg<br>  Content<br>  tags:<br>  title: 标签<br>  是否开启分享<br>  share: true<br>  是否开启搜索<br>  search: true<br>  是否大屏幕下文章页隐藏导航<br>  hideMenu: true<br>  是否开启toc<br>  toc: false  关闭toc<br>  toc:<br>  list_number: true # 是否显示数字排序<br>  浏览器标签栏小图标<br>  favicon: /favicon.ico</p>
 </blockquote>
 <p>最后生成部署，来看看效果吧</p>
 <blockquote>
@@ -239,7 +231,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-12-30T07:05:40.000Z" itemprop="dateUpdated">2017-12-30 15:05:40</time>
+    最后更新时间：<time datetime="2017-12-30T07:09:45.000Z" itemprop="dateUpdated">2017-12-30 15:09:45</time>
 </span><br>
 
 

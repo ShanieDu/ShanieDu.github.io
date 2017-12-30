@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-30T07:02:19.000Z</updated>
+  <updated>2017-12-30T15:17:48.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,12 +21,21 @@
     <link href="http://yoursite.com/2017/12/30/MD%E6%96%87%E4%BB%B6%E9%87%8C%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>http://yoursite.com/2017/12/30/MD文件里上传图片的方法/</id>
     <published>2017-12-30T07:02:19.000Z</published>
-    <updated>2017-12-30T07:02:19.000Z</updated>
+    <updated>2017-12-30T15:17:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MD文件上传图片的方法"><a href="#MD文件上传图片的方法" class="headerlink" title="MD文件上传图片的方法"></a>MD文件上传图片的方法</h2><p>这里介绍一种把图片上传到Git，然后再链入MD的方法。<br>先进入GIthub,新建一个名为MarkdownPhotos的Repository;<br>点击Upload files,上传本地图片；<br>然后点击图片，<br>鼠标移至Download，右键点击Open Link in new window,复制图片地址（如<a href="https://raw.githubusercontent.com/ShanieDu/MarkdownPhotos/master/1.png），" target="_blank" rel="noopener">https://raw.githubusercontent.com/ShanieDu/MarkdownPhotos/master/1.png），</a><br>在MD文件中输入</p><blockquote><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://raw.githubusercontent.com/ShanieDu/MarkdownPhotos/master/1.png" alt="Aaron Swartz" title="">                </div>                <div class="image-caption">Aaron Swartz</div>            </figure></blockquote><p>完成~</p>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;h2 id=&quot;MD文件上传图片的方法&quot;&gt;&lt;a href=&quot;#MD文件上传图片的方法&quot; class=&quot;headerlink&quot; title=&quot;MD文件上传图片的方法&quot;&gt;&lt;/a&gt;MD文件上传图片的方法&lt;/h2&gt;&lt;p&gt;这里介绍一种把图片上传到Git，然后再链入MD的方法。&lt;br&gt;先进入
+      
+    
     </summary>
     
+    
+      <category term="上传图片 MD" scheme="http://yoursite.com/tags/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87-MD/"/>
     
   </entry>
   
@@ -64,18 +73,15 @@
     <link href="http://yoursite.com/2017/12/30/hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/"/>
     <id>http://yoursite.com/2017/12/30/hexo-搭建博客主题配置/</id>
     <published>2017-12-30T05:11:13.000Z</published>
-    <updated>2017-12-30T07:09:45.000Z</updated>
+    <updated>2017-12-30T15:11:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>#主题配置</p><p>Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。<br>以我现在使用的indigo主题为例。首先将主题库clone到MyBlog目录下的themes目录：</p><blockquote><p>git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo</p></blockquote><p>安装less，主题使用less作为css预处理工具：</p><blockquote><p>npm install hexo-renderer-less –save</p></blockquote><p>安装feed,用于生吃RSS：</p><blockquote><p>npm install hexo-generator-feed –save</p></blockquote><p>安装json-content，用于生成静态站点数据，提供搜索功能的数据源：</p><blockquote><p>npm install hexo-generator-json-content –save</p></blockquote><p>开启标签页：</p><blockquote><p>hexo new page tags</p></blockquote><p>修改MyBlog/source/tags/index.md的源数据：</p><blockquote><p>layout: tags<br>noDate: true<br>comments: false</p></blockquote><p>修改hexo配置文件_config.yml中的主题标签：</p><blockquote><p>theme: indigo</p></blockquote><p>最后修改主题配置文件MyBlog/themes/indigo/_config.yml：</p><blockquote><p>//<strong>添加新菜单项遵循以下规则</strong><br>// menu:<br>//   link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须<br>//   text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写<br>//   url: /about 链接，绝对或相对路径，必须。<br>//   target: _blank 是否跳出，省略则在当前页面打开<br>menu:<br>  home:<br>  text: 主页<br>  url: /<br>  archives:<br>  url: /archives<br>  tags:<br>  url: /tags<br>  github:<br>  url: <a href="https://github.com/glassweichao" target="_blank" rel="noopener">https://github.com/glassweichao</a><br>  target: _blank<br>  link:<br>  text: 测试<br>  url: /404<br>  rss: /atom.xml<br>  你的头像,替换掉 indigo/source/img/logo.jpg 即可<br>  urlavatar: /img/logo.jpg<br>  Content<br>  tags:<br>  title: 标签<br>  是否开启分享<br>  share: true<br>  是否开启搜索<br>  search: true<br>  是否大屏幕下文章页隐藏导航<br>  hideMenu: true<br>  是否开启toc<br>  toc: false  关闭toc<br>  toc:<br>  list_number: true # 是否显示数字排序<br>  浏览器标签栏小图标<br>  favicon: /favicon.ico</p></blockquote><p>最后生成部署，来看看效果吧</p><blockquote><p>hexo clean<br>  hexo d -g</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h1><p>Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。<br>以我现在使用的indigo主题为例。首先将主题库clone到MyBlog目录下的themes目录：</p><blockquote><p>git clone git@github.com:yscoder/hexo-theme-indigo.git themes/indigo</p></blockquote><p>安装less，主题使用less作为css预处理工具：</p><blockquote><p>npm install hexo-renderer-less –save</p></blockquote><p>安装feed,用于生吃RSS：</p><blockquote><p>npm install hexo-generator-feed –save</p></blockquote><p>安装json-content，用于生成静态站点数据，提供搜索功能的数据源：</p><blockquote><p>npm install hexo-generator-json-content –save</p></blockquote><p>开启标签页：</p><blockquote><p>hexo new page tags</p></blockquote><p>修改MyBlog/source/tags/index.md的源数据：</p><blockquote><p>layout: tags<br>noDate: true<br>comments: false</p></blockquote><p>修改hexo配置文件_config.yml中的主题标签：</p><blockquote><p>theme: indigo</p></blockquote><p>最后修改主题配置文件MyBlog/themes/indigo/_config.yml：</p><blockquote><p>//<strong>添加新菜单项遵循以下规则</strong><br>// menu:<br>//   link: fontawesome图标，省略前缀，本主题前缀为 icon-，必须<br>//   text: About 菜单显示的文字，如果省略即默认与图标一致，首字母会转大写<br>//   url: /about 链接，绝对或相对路径，必须。<br>//   target: _blank 是否跳出，省略则在当前页面打开<br>menu:<br>  home:<br>  text: 主页<br>  url: /<br>  archives:<br>  url: /archives<br>  tags:<br>  url: /tags<br>  github:<br>  url: <a href="https://github.com/glassweichao" target="_blank" rel="noopener">https://github.com/glassweichao</a><br>  target: _blank<br>  link:<br>  text: 测试<br>  url: /404<br>  rss: /atom.xml<br>  你的头像,替换掉 indigo/source/img/logo.jpg 即可<br>  urlavatar: /img/logo.jpg<br>  Content<br>  tags:<br>  title: 标签<br>  是否开启分享<br>  share: true<br>  是否开启搜索<br>  search: true<br>  是否大屏幕下文章页隐藏导航<br>  hideMenu: true<br>  是否开启toc<br>  toc: false  关闭toc<br>  toc:<br>  list_number: true # 是否显示数字排序<br>  浏览器标签栏小图标<br>  favicon: /favicon.ico</p></blockquote><p>最后生成部署，来看看效果吧</p><blockquote><p>hexo clean<br>  hexo d -g</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#主题配置&lt;/p&gt;
-&lt;p&gt;Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。&lt;br&gt;以我现在使用的indigo主题为例。首先将主题库clone到MyBlog目录下的themes目录：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;git cl
+        &lt;h1 id=&quot;主题配置&quot;&gt;&lt;a href=&quot;#主题配置&quot; class=&quot;headerlink&quot; title=&quot;主题配置&quot;&gt;&lt;/a&gt;主题配置&lt;/h1&gt;&lt;p&gt;Hexo具有高定制的主题效果，你可以从Hexo的主题库中选择合适的主题，也可以自己制作。&lt;br&gt;以我现在使用的indigo主
       
     
     </summary>
